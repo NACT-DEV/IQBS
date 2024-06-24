@@ -1,1 +1,1 @@
-This is a boostrap template stole by the one and only Daniel.😊
+Empty Read ME!
