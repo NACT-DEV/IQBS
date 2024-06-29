@@ -35,15 +35,15 @@
 		<link href="assets/css/main.css" rel="stylesheet" />
 
 		<!-- =======================================================
-		* Template Name: Gp
-		* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-		* Updated: Jun 14 2024 with Bootstrap v5.3.3
-		* Author: BootstrapMade.com
-		* License: https://bootstrapmade.com/license/
-		======================================================== -->
+  * Template Name: Gp
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Updated: Jun 14 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 	</head>
 
-	<body class="success-story-page">
+	<body class="portfolio-details-page">
 		<header
 			id="header"
 			class="header d-flex align-items-center position-relative">
@@ -52,22 +52,47 @@
 				<a
 					href="index.html"
 					class="logo d-flex align-items-center me-auto me-lg-0">
-					<h1 class="sitename">IQBS</h1>
+					<!-- Uncomment the line below if you also wish to use an image logo -->
+					<!-- <img src="assets/img/logo.png" alt=""> -->
+					<h1 class="sitename">GP</h1>
 					<span>.</span>
 				</a>
 
 				<nav id="navmenu" class="navmenu">
 					<ul>
 						<li>
-							<a href="/#hero">Home<br /></a>
+							<a href="#hero">Home<br /></a>
 						</li>
-						<li><a href="/#approach">Approach</a></li>
-						<li><a href="/#clients">Clients</a></li>
-						<li><a href="/#why">Why IQBS</a></li>
-						<li><a href="/#services">Services</a></li>
-						<li><a href="/#our-story" class="active">Our Story</a></li>
-						<li><a href="/#pricing">Pricing</a></li>
-						<li><a href="/#contact">Contact</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#team">Team</a></li>
+						<li class="dropdown">
+							<a href="#"
+								><span>Dropdown</span>
+								<i class="bi bi-chevron-down toggle-dropdown"></i
+							></a>
+							<ul>
+								<li><a href="#">Dropdown 1</a></li>
+								<li class="dropdown">
+									<a href="#"
+										><span>Deep Dropdown</span>
+										<i class="bi bi-chevron-down toggle-dropdown"></i
+									></a>
+									<ul>
+										<li><a href="#">Deep Dropdown 1</a></li>
+										<li><a href="#">Deep Dropdown 2</a></li>
+										<li><a href="#">Deep Dropdown 3</a></li>
+										<li><a href="#">Deep Dropdown 4</a></li>
+										<li><a href="#">Deep Dropdown 5</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Dropdown 2</a></li>
+								<li><a href="#">Dropdown 3</a></li>
+								<li><a href="#">Dropdown 4</a></li>
+							</ul>
+						</li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 					<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 				</nav>
@@ -78,12 +103,12 @@
 
 		<main class="main">
 			<!-- Page Title -->
-			<!-- <div class="page-title" data-aos="fade">
+			<div class="page-title" data-aos="fade">
 				<div class="heading">
 					<div class="container">
 						<div class="row d-flex justify-content-center text-center">
 							<div class="col-lg-8">
-								<h1>Starter Page</h1>
+								<h1>Portfolio Details</h1>
 								<p class="mb-0">
 									Odio et unde deleniti. Deserunt numquam exercitationem.
 									Officiis quo odio sint voluptas consequatur ut a odio
@@ -98,129 +123,91 @@
 					<div class="container">
 						<ol>
 							<li><a href="index.html">Home</a></li>
-							<li class="current">Starter Page</li>
+							<li class="current">Portfolio Details</li>
 						</ol>
 					</div>
 				</nav>
-			</div> -->
+			</div>
 			<!-- End Page Title -->
 
-			<!-- Starter Section Section -->
-			<section id="starter-section" class="starter-section section">
-				<!-- Section Title -->
-				<div
-					class="container section-title"
-					style="padding-bottom: 10px"
-					data-aos="fade-up">
-					<h2>Success Story</h2>
-					<p>North Atlantic Container Trading<br /></p>
-				</div>
-				<!-- End Section Title -->
+			<!-- Portfolio Details Section -->
+			<section id="portfolio-details" class="portfolio-details section">
+				<div class="container" data-aos="fade-up" data-aos-delay="100">
+					<div class="row gy-4">
+						<div class="col-lg-8">
+							<div class="portfolio-details-slider swiper init-swiper">
+								<script type="application/json" class="swiper-config">
+									{
+										"loop": true,
+										"speed": 600,
+										"autoplay": {
+											"delay": 5000
+										},
+										"slidesPerView": "auto",
+										"pagination": {
+											"el": ".swiper-pagination",
+											"type": "bullets",
+											"clickable": true
+										}
+									}
+								</script>
 
-				<div class="container" data-aos="fade-up">
-					<p>
-						<span style="font-weight: 500">Client:</span>
-						North Atlantic Container Trading
-					</p>
-					<p>
-						<span style="font-weight: 500">Industry:</span>
-						Shipping Container Trading
-					</p>
-					<p>
-						<span style="font-weight: 500">Location:</span>
-						New Jersey, USA
-					</p>
-				</div>
+								<div class="swiper-wrapper align-items-center">
+									<div class="swiper-slide">
+										<img src="assets/img/portfolio/app-1.jpg" alt="" />
+									</div>
 
-				<div class="container my-4" data-aos="fade-down">
-					<h6>Challenge</h6>
-					<p>
-						North Atlantic Container Trading, a dynamic player in the shipping
-						container trading market, faced significant challenges in scaling
-						their operations and managing their financial processes efficiently.
-						With ambitous to grow rapidly and the complexities of handling
-						extensive sales and financial transactions, they sought a partner
-						who could provide expert outsourcing solutions.
-					</p>
-				</div>
+									<div class="swiper-slide">
+										<img src="assets/img/portfolio/product-1.jpg" alt="" />
+									</div>
 
-				<div class="container my-4" data-aos="fade-down">
-					<h6>Our Solution</h6>
-					<ul class="list-unstyled">
-						<li class="my-1">
-							<i class="bi bi-check2-all text-primary"></i>
-							<span>
-								<span style="font-weight: 500"
-									>Outsourced Finance and Accounting Team:</span
-								>
-								For their financial operations, we provided a remote finance and
-								accounting team proficient in billing, collection, bookkeeping,
-								and cash flow management. This team enssured that North Atlantic
-								Container Trading's financial processes were streamlined,
-								transparent, and compliant with industry standards.</span
-							>
-						</li>
-						<li>
-							<i class="bi bi-check2-all text-primary"></i>
-							<span
-								><span style="font-weight: 500">Outsourced Sales Team:</span> To
-								address their growth objectives, we assembled a remote sales
-								team dedicated to customer acquisition and customer service. The
-								team operated with precision and efficiency, utilizing
-								cutting-edge sales strategies and technologies to engage and
-								convert leads into loyal customers.</span
-							>
-						</li>
-					</ul>
-				</div>
+									<div class="swiper-slide">
+										<img src="assets/img/portfolio/branding-1.jpg" alt="" />
+									</div>
 
-				<div class="container my-4" data-aos="fade-down">
-					<h6>Result</h6>
-					<ul class="list-unstyled">
-						<li class="my-1">
-							<i class="bi bi-check2-all text-primary"></i>
-							<span>
-								<span style="font-weight: 500">Triple Growth in Revenue:</span>
-								Thanks to the exceptional performance of our outsourced sales
-								team, North Atlantic Container Trading experienced a threefold
-								increase in their revenue within just three years. Their annual
-								revenues skyrocketed to an impressive $10 million, solidifying
-								their position as a leader in the industry.</span
-							>
-						</li>
-						<li>
-							<i class="bi bi-check2-all text-primary"></i>
-							<span
-								><span style="font-weight: 500"
-									>Efficient Financial Management:</span
-								>
-								With our finance and accounting team handling all aspects of
-								their financial operations North Atlantic Container Trading
-								benefited from accurate bookkeeping, timely collections, and
-								robust cash flow management. This not only improved their
-								financial health but also provided them with the insights needed
-								to make informed business decisions.</span
-							>
-						</li>
-					</ul>
-				</div>
+									<div class="swiper-slide">
+										<img src="assets/img/portfolio/books-1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
 
-				<div class="container my-4" data-aos="fade-left">
-					<h6>Client Testimonial</h6>
-					<p>
-						&#8221;Partnering with IQBS was one of the best decisions we've
-						made. Their remote sales team drove our revenue growth beyond our
-						expectations, and their finance and accounting team brought clarity
-						and efficiency to our financial processes. We thrilled with the
-						results and look forrward to continued success together&ldquo;
-						<br />
-						<span style="font-weight: 500"
-							>--Sean J. Escareal, Owner, North Atlantic Container Trading</span
-						>
-					</p>
+						<div class="col-lg-4">
+							<div
+								class="portfolio-info"
+								data-aos="fade-up"
+								data-aos-delay="200">
+								<h3>Project information</h3>
+								<ul>
+									<li><strong>Category</strong>: Web design</li>
+									<li><strong>Client</strong>: ASU Company</li>
+									<li><strong>Project date</strong>: 01 March, 2020</li>
+									<li>
+										<strong>Project URL</strong>:
+										<a href="#">www.example.com</a>
+									</li>
+								</ul>
+							</div>
+							<div
+								class="portfolio-description"
+								data-aos="fade-up"
+								data-aos-delay="300">
+								<h2>Exercitationem repudiandae officiis neque suscipit</h2>
+								<p>
+									Autem ipsum nam porro corporis rerum. Quis eos dolorem eos
+									itaque inventore commodi labore quia quia. Exercitationem
+									repudiandae officiis neque suscipit non officia eaque itaque
+									enim. Voluptatem officia accusantium nesciunt est omnis
+									tempora consectetur dignissimos. Sequi nulla at esse enim cum
+									deserunt eius.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<!-- /Starter Section Section -->
+			<!-- /Portfolio Details Section -->
 		</main>
 
 		<footer id="footer" class="footer">
@@ -229,15 +216,15 @@
 					<div class="row gy-4">
 						<div class="col-lg-4 col-md-6 footer-about">
 							<a href="index.html" class="logo d-flex align-items-center">
-								<span class="sitename">IQBS</span>
+								<span class="sitename">GP</span>
 							</a>
 							<div class="footer-contact pt-3">
-								<p>31 Marina Lane, Brick NJ 08724,</p>
-								<p>New Jersey, USA</p>
+								<p>A108 Adam Street</p>
+								<p>New York, NY 535022</p>
 								<p class="mt-3">
-									<strong>Phone:</strong> <span>+123-456-7890</span>
+									<strong>Phone:</strong> <span>+1 5589 55488 55</span>
 								</p>
-								<p><strong>Email:</strong> <span>info@iqbs.com</span></p>
+								<p><strong>Email:</strong> <span>info@example.com</span></p>
 							</div>
 							<div class="social-links d-flex mt-4">
 								<a href=""><i class="bi bi-twitter-x"></i></a>
@@ -251,35 +238,21 @@
 							<h4>Useful Links</h4>
 							<ul>
 								<li>
-									<i class="bi bi-chevron-right"></i> <a href="#">Home</a>
+									<i class="bi bi-chevron-right"></i> <a href="#"> Home</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i> <a href="#"> About us</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i> <a href="#"> Services</a>
 								</li>
 								<li>
 									<i class="bi bi-chevron-right"></i>
-									<a href="#approach">Approach</a>
+									<a href="#"> Terms of service</a>
 								</li>
 								<li>
 									<i class="bi bi-chevron-right"></i>
-									<a href="#clients">Clients</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#why">Why IQBS</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#services">Services</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#our-story">Our Story</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#pricing">Pricing</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#contact">Contact</a>
+									<a href="#"> Privacy policy</a>
 								</li>
 							</ul>
 						</div>
@@ -289,15 +262,22 @@
 							<ul>
 								<li>
 									<i class="bi bi-chevron-right"></i>
-									<a href="#services">SMMA</a>
+									<a href="#"> Web Design</a>
 								</li>
 								<li>
 									<i class="bi bi-chevron-right"></i>
-									<a href="#services">Accounting and Finance</a>
+									<a href="#"> Web Development</a>
 								</li>
 								<li>
 									<i class="bi bi-chevron-right"></i>
-									<a href="#services">Data Analytics</a>
+									<a href="#"> Product Management</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="#"> Graphic Design</a>
 								</li>
 							</ul>
 						</div>
@@ -313,8 +293,9 @@
 								method="post"
 								class="php-email-form">
 								<div class="newsletter-form">
-									<input type="email" name="email" />
-									<input type="submit" value="Subscribe" />
+									<input type="email" name="email" /><input
+										type="submit"
+										value="Subscribe" />
 								</div>
 								<div class="loading">Loading</div>
 								<div class="error-message"></div>
@@ -330,9 +311,16 @@
 			<div class="copyright">
 				<div class="container text-center">
 					<p>
-						© <span>Copyright</span> <strong class="px-1 sitename">IQBS</strong>
+						© <span>Copyright</span> <strong class="px-1 sitename">GP</strong>
 						<span>All Rights Reserved</span>
 					</p>
+					<div class="credits">
+						<!-- All the links in the footer should remain intact. -->
+						<!-- You can delete the links only if you've purchased the pro version. -->
+						<!-- Licensing information: https://bootstrapmade.com/license/ -->
+						<!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+						Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+					</div>
 				</div>
 			</div>
 		</footer>
